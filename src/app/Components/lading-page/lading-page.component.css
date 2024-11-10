@@ -1,0 +1,56 @@
+.half-border {
+    position: relative;
+    padding: 2px;
+    background: linear-gradient(to right, cyan, blue);
+    border-radius: 1rem;
+  }
+  .half-border .card-content {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, cyan, blue);
+    border-image-slice: 1;
+  }
+  /* Connector lines and dots */
+  .connector-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 2px;
+    background: linear-gradient(to bottom, cyan, blue);
+    position: relative;
+    padding: 1rem 0;
+  }
+  .connector-dot {
+    width: 8px;
+    height: 8px;
+    background-color: cyan;
+    border-radius: 50%;
+    margin: 1rem 0;
+  }
+  .connector-arrow {
+    width: 0;
+    height: 0;
+    border-left: 8px solid cyan;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    margin-top: 1rem;
+  }
+  /* Card number circle */
+  .card-number {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: cyan;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+  }
